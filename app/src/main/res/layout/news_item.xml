@@ -15,12 +15,12 @@
             android:id="@+id/ivThumbnail"
             android:layout_width="0dp"
             android:layout_height="@dimen/newsImageHeight"
+            android:contentDescription="@string/cdNewsImage"
+            android:src="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@color/black"
-            tools:srcCompat="@tools:sample/avatars"
-            android:contentDescription="@string/cdNewsImage" />
+            tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/tvTitle"
@@ -65,21 +65,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/defaultMargin"
+            android:clickable="true"
+            android:contentDescription="@string/ivFavoriteDescription"
+            android:focusable="true"
+            android:foreground="?android:attr/actionBarItemBackground"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toStartOf="@+id/ivShare"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
             app:srcCompat="@drawable/ic_favorite"
-            android:contentDescription="@string/ivFavoriteDescription" />
+            android:padding="4dp"/>
 
         <ImageView
             android:id="@+id/ivShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/defaultMargin"
+            android:clickable="true"
+            android:contentDescription="@string/cdShareDescription"
+            android:focusable="true"
+            android:foreground="?android:attr/actionBarItemBackground"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
             app:srcCompat="@drawable/ic_share"
-            android:contentDescription="@string/cdShareDescription" />
+            android:padding="4dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
