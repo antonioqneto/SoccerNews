@@ -18,12 +18,9 @@ public class NewsViewModel extends ViewModel {
 
         //TODO Remover Mock de notícias
         List<News> news = new ArrayList<>();
-        news.add(new News("Ararinha completaria 247 anos neste fim de semana", "\n" +
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam orci, aliquam."));
-        news.add(new News("Roberto Carlos anuncia aquisição de USJ", "\n" +
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam orci, aliquam."));
-        news.add(new News("Estão abertas as inscrições para escolinha do USJ", "\n" +
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam orci, aliquam."));
+        news.add(new News("Ararinha completaria 247 anos neste fim de semana", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam orci, aliquam."));
+        news.add(new News("Roberto Carlos anuncia aquisição de USJ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam orci, aliquam."));
+        news.add(new News("Estão abertas as inscrições para escolinha do USJ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam orci, aliquam."));
 
         this.news.setValue(news);
     }
